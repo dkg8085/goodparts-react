@@ -1,0 +1,223 @@
+.box-wrapper {  
+  background: #fff;
+}
+.box-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.box-container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -15px;
+  gap: 15px;
+  margin-right: -15px;
+  padding: 80px 0 35px 0;
+}
+.box-container .box-term-item {
+  width: calc(33.33% - 30px);
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+.box_content_wrapper {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 23px;
+  position: relative;
+  height: 100%;
+}
+.term_head {
+  background: #15273B;
+  border-radius: 23px 23px 0 0;
+  padding: 10px 30px 10px 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-height: 50px;
+  transition: all 0.5s;
+}
+.term_head .icons {
+  padding-right: 20px;
+  max-width: 47px;
+  transition: all 0.5s;
+  display: flex;
+}
+.term_head .heading h4 {
+  font-family: Space Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 0;
+}
+.bucketdesc {
+  padding: 30px 30px 30px 30px;
+}
+.nb_term_post{
+  color: #3c434a;
+}
+.bucketdesc h4 {   
+  font-weight: 700;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 32px;
+  color: #15273b;
+  margin: 0;
+}
+.bucketdesc .nb_term_post ul {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+.bucketdesc .nb_term_post ul li {
+  font-family: 'Proxima Nova';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+}
+/* @media Query */
+a.box-term-item .box-term-item{
+  width: 100%;
+}
+
+/* Center wrapper */
+.prep_search {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 0 0;  
+}
+
+/* Search container */
+.prep_search-wrap {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form */
+.search-form {
+  position: relative;
+}
+
+/* Input field (pill style) */
+.search-field {
+  width: 100%;
+  padding: 14px 50px 14px 20px; 
+  border: 1px solid #d6d6d6;
+  outline: none;
+  font-size: 15px;
+  font-style: italic;   
+transition: all 0.2s ease;
+  background: rgba(223, 223, 223, 0.4);
+  border-radius: 30px;
+  border: none;
+  color: #919497 !important
+}
+
+/* Placeholder */
+.search-field::placeholder {
+  color: #6f7c8a;
+}
+
+/* Focus effect */
+.search-field:hover{
+  box-shadow: 0 0 4px rgba(21, 39, 59, 0.5);
+}
+.search-field:focus {
+  background-color: #ffffff;
+  border-color: #c5c5c5;
+  box-shadow: 0 0 4px rgba(21, 39, 59, 0.5);
+}
+
+/* Search button (icon inside input) */
+.search-submit {
+  position: absolute;
+  right: 15px;
+  top: 60%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Optional: hide default button text */
+.search-submit img {
+  width: 20px;
+  height: 20px;
+}
+.bottom-wrapper{
+  text-align: center;
+  padding: 35px 0px 35px 0px;
+}
+.bottom-btn .backto-top{
+  padding: 50px 0 100px
+}
+.bottom-btn .backto-top a {
+    text-decoration: none;
+    position: relative;
+    border-bottom: 1px solid #707070;
+    color: #707070;
+}
+.bottom-btn .backto-top a:hover{
+  color:#ff0000;
+  border: none;
+
+}
+.bottom-btn .backto-top a:before{
+  content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.box-term-item .box-term-card{
+height:100%;
+transition: all 0.2s;
+}
+.box-term-item .box-term-card:hover .term_head{
+  background: #FF0000;
+  transition: all 0.5s;
+}
+.box-term-item .box-term-card .term_head .icons img {
+  transition: all 0.5s;
+  height: auto;
+}
+.box-term-item .box-term-card:hover .term_head .icons img {
+  filter: brightness(0) invert(1);
+}
+.box-term-item .box-term-card:hover .box_content_wrapper{
+  background: linear-gradient(45deg, #15273B -5%, #86141E 120%, #86141E 100%, #FF0000 100%);
+  transition: all 0.5s;
+
+}
+.box-term-item .box-term-card:hover .nb_term_post li,
+.box-term-item .box-term-card:hover .bucketdesc h4{
+  color: #fff;
+}
+/* @media query */
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .box-container .box-term-item {
+  width: 45%;
+}
+}
+
+@media screen and (max-width:767px){
+  .box-container .box-term-item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .box-container {
+    width: 520px;
+    }
+}

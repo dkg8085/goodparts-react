@@ -1,0 +1,127 @@
+/* Play Icon */
+.show-sheet-popup .icon-container {
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px;
+}
+
+.show-sheet-popup .play-icon {
+    color: #ff0000;
+    font-size: 50px;
+}
+
+.show-sheet-popup .image-icon {
+    color: blue;
+    font-size: 50px;
+}
+
+/* Modal Styles */
+.show-sheet-popup.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-sheet-popup .modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 870px;
+    /* background: #fff; */
+    /* padding: 20px; */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.show-sheet-popup .modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+.show-sheet-popup .custom-content {
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* .modal-close-sec {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.show-sheet-popup .close-btn {
+    position: absolute;
+    top: -10px;
+    right: -14px;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.show-sheet-popup .close-btn span {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.show-sheet-table .panel-content {
+    width: calc(100% - 300px);
+}
+
+.show-sheet-table .accordion-content-wrap p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: 'Proxima Nova';
+    color: #707070;
+    word-wrap: break-word;
+    margin: 10px 0;
+}
+.show-sheet-table .accordion-content-wrap p a{
+    color: #15273b;
+    font-weight: 400;
+    transition: all 0.2s;
+}
+.show-sheet-table .accordion-content-wrap p a:hover{
+    color: #ff0000;
+    
+}
+.show-sheet-table .accordion-content-wrap {
+    padding-bottom: 35px;
+}
+
+.show-sheet-popup .close-btn :hover {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .show-sheet-popup .modal-content {
+        width: 95%;
+    }
+
+    .show-sheet-table .panel-content {
+        width: auto;
+    }
+}

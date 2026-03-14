@@ -1,0 +1,153 @@
+/* Dropdown CSS */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   z-index: 9999;
+
+}
+
+.menu-wrap .menu .menu-text{
+    padding: 39px 22px ;
+    font-family: 'Space Mono';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #15273B;
+    text-align: center;
+}
+.menu-wrap .menu .menu-text:hover{
+    background: rgba(223, 223, 223, .4);
+    color: #15273B;
+}
+.menu-wrap .menu li.menu-item.active > a{
+    color: #ff0000;
+}  
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.menu-wrap li.menu-item{
+  position: relative;
+  text-transform: uppercase;
+}
+.setting-icon-menu .setting-icon-menu-item li a,
+.menu-wrap li a{text-transform: uppercase;}
+
+.setting-icon-menu{
+    height: 100%;
+    cursor: pointer;
+}
+.setting-icon-menu img{
+ margin-top: 32px;
+}
+
+/* First Level Dropdown */
+
+.setting-icon-menu .setting-icon-menu-item,
+.menu-wrap .dropdown {
+    padding: 10px 0;
+    position: absolute;
+    top: 100%;
+    right:  0;
+    list-style: none;
+    display: none;
+    width: 300px;
+    background: #15273b;
+    margin-top: 0;
+    border-radius: 0 0 7px 7px;
+    border: none;
+}
+
+.setting-icon-menu .setting-icon-menu-item{
+    top: 98px;
+    right: -10px;
+}
+
+.menu li:hover > .dropdown {
+    display: block;
+}
+
+.setting-icon-menu{
+    position: relative;
+}
+
+.setting-icon-menu:hover .setting-icon-menu-item{
+    display: block;
+}
+.setting-icon-menu .setting-icon-menu-item li,
+.dropdown li {
+    position: relative;
+    padding: 0 30px;
+}
+
+.setting-icon-menu .setting-icon-menu-item li a,
+.sub-dropdown a,
+.dropdown li a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #DFDFDF;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.55px;
+    font-weight: 400;
+    font-family: 'Space Mono';
+    display: flex;
+    justify-content: space-between;
+}
+
+.setting-icon-menu .setting-icon-menu-item li a:hover,
+.dropdown li:hover > a {
+    color: #ff0000;
+}
+.header-icons .setting-icon:first-child a:hover img{
+    background: none;
+    opacity: .7;
+    transition: background .2s ease-out, transform .2s ease-out;
+}
+ 
+.dropdown li a .parent-indicator svg:last-child{
+    display: none;
+    margin-top: 2px;
+}
+.dropdown li:hover > a  .parent-indicator svg:last-child{
+  display: block;
+}
+.dropdown li:hover > a  .parent-indicator svg:first-child{
+    display: none;
+  }
+
+/* Second Level Dropdown */
+.sub-dropdown {
+    position: absolute;
+    top: 0;
+    padding: 10px 0;
+    right: 100%;
+    background: #15273b;
+    list-style: none;
+    display: none;
+    width: 300px;
+    background: #15273b;
+    border-radius: 0 0 7px 7px;
+    border: none;
+}
+
+.dropdown li:hover > .sub-dropdown {
+    display: block;
+}
+
+@media screen and (max-width : 992px){
+    .menu-wrap .menu .menu-text{
+        padding: 39px 25px ;
+    }
+}
+

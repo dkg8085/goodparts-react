@@ -1,0 +1,305 @@
+header {
+    background: #FFF 0% 0% no-repeat padding-box;
+    box-shadow: 0 0 15px #0000001F;
+    position: relative;
+    z-index: 10;
+}
+
+header .container {
+    max-width: 1210px;
+    margin: 0 auto;
+    display: flex;
+}
+
+header .col-25 {
+    width: 25%;
+}
+
+header .col-50 {
+    width: 50%;
+}
+
+header .site-logo img {
+    max-width: 266px;
+    padding: 25px 25px 12px 0px;
+}
+
+.col-10 {
+    width: 10%;
+}
+
+.col-15 {
+    width: 15%;
+}
+
+header .row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 20px;
+}
+
+header .header-col {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-right: 1px solid #707070;
+    height: 100%;
+}
+
+.menu.menu-wrap-col {
+    width: 100%;
+}
+.setting-icon-menu .setting-icon-menu-item li:last-child a,
+.dropdown li:last-child a{
+    border-bottom: none;
+}
+
+header .play-icon-wrap {
+    padding-left: 25px;
+}
+
+header .play-icon-wrap .play-icon-text {
+    max-width: 172px;
+}
+
+header .play-icon-wrap .play-icon-text p {
+    margin: 0;
+    text-align: left;
+    font-family: "Space Mono", serif;
+    letter-spacing: 0px;
+    color: #15273B;
+    text-transform: uppercase;
+    opacity: 1;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header .header-icons:nth-last-child(2) {
+    border-right: none;
+    padding-left: 25px;
+}
+
+header .header-icons:last-child {
+    border-right: none;
+}
+
+header .play-icon-wrap svg path {
+    fill: var(--main-color);
+}
+
+header .header-icons .setting-icon {
+    padding-left: 10px;
+}
+/*  */
+.hamburgerIcon-col {
+    display: none;
+}
+
+.hamburgerIcon-col .hamburgerIcon-btn {
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/* toturiols-page */
+
+.how-it-works-video-sec {
+  /* background-color: #e5e5e5; */
+  padding: 80px 70px;
+}
+
+.video-row {
+  display: flex;
+  justify-content: start;
+  gap: 40px;
+}
+.video-item {
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.video-item h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #575757;
+  font-family: "Eurostile";
+}
+
+.video-item video {
+  width: 100%;
+  min-height: 260px;
+  max-width: 480px;
+  box-sizing: border-box;
+}
+/* toturiols-page-end*/
+
+/* RSS FEED PAGE CSS */
+.rss-page {
+    background: #F3F3F3;
+    padding: 60px 40px;
+   }
+   
+   
+   .rss-page .rss-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #575757;
+    font-weight: 400;
+   }
+   
+   .rss-top-links {
+    display: grid;
+    gap: 40px;
+    margin-bottom: 30px;
+    grid-template-columns: repeat(3, 1fr);
+   }
+   
+   .rss-top-links a {
+    text-decoration: none;
+    color: #15273b;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 400;
+   }
+  
+   .rss-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 50px;
+   }
+   
+   .rss-bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+   }
+   
+   .rss-column h3 a{
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #444;
+    text-decoration: none;
+    line-height: 40px;
+    font-weight: 400;
+   }
+   
+   .rss-column ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 0;
+   }
+   .rss-column li::marker {
+    color: #2C3E50;
+   }
+   
+   .rss-column li a{
+    margin-bottom: 10px;
+   color: #2C3E50;
+   cursor: pointer;
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 32px;
+   }
+   .rss-page a:hover {
+    color: #ff0000;
+}   
+/* RSS end */
+
+
+@media screen and (max-width : 1200px) {
+    header .container {
+        max-width: 962px;
+    }
+
+    header .site-logo img {
+        width: 214px;
+    }  
+}
+
+@media screen and (max-width : 992px) {
+    header .container {
+        max-width: 738px;
+    }
+
+    header .site-logo img {
+        width: 168px;
+    }
+
+    header .col-25 {
+        width: 30%;
+    }
+
+    header .col-50 {
+        width: 35%;
+    }
+    .video-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .video-row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .video-item video {
+    max-width: 100%;
+  }
+    .how-it-works-video-sec {  
+  padding: 50px 30px;
+}
+}
+
+@media screen and (max-width : 767px) {
+
+    .play-icon-wrap,
+    .header-icons {
+        display: none !important;
+    }
+
+    header .header-col {
+        border-right: none;
+    }
+
+    header .col-25 img,
+    header .col-25 {
+        width: 85%;
+    }
+
+    header .col-25 .site-logo {
+        margin: 0;
+    }
+
+    header .row {
+        position: relative;
+    }
+
+    .hamburgerIcon-col {
+        display: block;
+        width: 15%;
+        text-align: right;
+    }
+
+    .menu-wrap.show-menu .dropdown {
+        display: block;
+    }
+
+    .menu-wrap {
+        width: 0%;
+        position: absolute;
+        right: -34px;
+        top: 36px;
+    }
+
+    .menu-wrap .menu-text {
+        display: none;
+
+    }
+
+}

@@ -1,0 +1,26 @@
+:root {
+  --main-color: #ff0000;
+  --secondary-color: #fff;
+  --logo-image: url(" ");
+  /* --banner-image: url(" ");*/
+  --banner-image: linear-gradient(90deg, #412030 0%, #15273b 100%);
+
+  --active-color: #15273B;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* img{max-width: 100%;} */

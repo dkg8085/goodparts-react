@@ -1,0 +1,218 @@
+.tx-page-items .post-box {
+    background: rgba(0, 0, 0, 0.02);
+    padding: 30px 60px 30px 60px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+.facetwp-template .usprep-tx-page.blog-archive .post-box .post-title {
+    margin-bottom: 15px;
+}
+.m-15{
+    margin-left: 15px;
+}
+
+.tx-page-items {
+    width: 100%;
+}
+.tx-page-items .post-title h2 img,
+.tx-page-items .post-title h2 svg {
+    margin-right: 25px;
+    width: 30px;
+}
+
+.tx-page-items .post-title h2 svg path{
+    fill: var(--main-color);
+}
+
+.tx-page-items .post-title a {
+    text-decoration: none;
+}
+
+.tx-page-items .post-title {
+    margin-bottom: 15px;
+}
+
+.tx-page-items .post-box .post-title h2 {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #000000;
+    font-family: 'Proxima Nova';
+    margin: 0;
+    display: flex;
+}
+.permission-wrap,
+.tx-page-items .post_cate_name {
+    margin-left: 55px;
+    color: #15273B;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova';
+}
+.permission-wrap{
+    text-align: center;
+    width: 100%;
+}
+
+
+.tx-page-items .post_cate_name .post_cate_icon img {
+    margin-right: 8px;
+}
+
+.prep-content-des {
+    padding-bottom: 35px;
+}
+.prep-content-des p a,
+.prep-content-des .ucnbblinks a{
+    text-decoration: underline;
+    color: #15273b;
+    transition: all .2s;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+.prep-content-des p a:hover,
+.prep-content-des .ucnbblinks a:hover{
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.tx-page-items .post-box .post-content p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: 'Proxima Nova';
+    color: #707070;
+    word-wrap: break-word;
+    margin: 24px 0;
+    
+}
+
+.tx-page-items .post-box .post-content h2{
+    font-size: 16px;
+    font-weight: normal;
+
+}
+.tx-page-items .post-box .post-content p > a{
+    /* margin-right: 10px; */
+}
+.tx-page-items .post-box .post-content p a img{
+    position: relative;
+    top: 10px;
+  	margin-right: 10px;
+}
+
+.post-bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.post-bottom .post-btns{
+ display: flex;
+}
+.post-bottom.btns-wrap{
+    justify-content: start;
+}
+
+.texo-list-box .post-bottom .post-btns{
+   flex-wrap: wrap;
+   }
+
+   .single-post-layout .tx-page-items .post-btns{
+    text-align: center;
+   }
+.tx-page-items .post-btns a {
+    display: inline-block;
+    border: solid 1px #C8C8C9;
+    color: #919497;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 7px 22px 8px;
+    display: inline-flex;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0 10px 10px 0;
+    font-family: 'Proxima Nova';
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.tx-page-items .post-btns a svg{
+    fill: #919497 ;
+    font-weight: 600 ;
+    margin-right: 5px;
+}
+
+.tx-page-items .post-btns a:hover svg{
+    fill: var(--main-color); 
+}
+
+
+
+.tx-page-items .post-box .post-btns .mbfp-btn {
+    display: inline-flex;
+    vertical-align: middle;
+    border: solid 1px #C8C8C9;
+    color: #919497;
+    padding: 6px 22px;
+    font-weight: 600;
+    align-items: center;
+    font-family: 'Proxima Nova';
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btns-wrap .mbfp-btn .mbfp-icon {
+    fill: #919497;
+    font-weight: 600;
+}
+
+.tx-page-items .post-box .post-btns a:hover,
+.tx-page-items .post-btns a:hover {
+    background: transparent;
+    border-color:var(--main-color);
+    color: #15273B;
+}
+
+.tx-page-items .post-box .post-btns .mbfp-btn:hover {
+    background: transparent;
+    border-color: var(--main-color);
+}
+
+.tx-page-items .post-box .post-btns .mbfp-btn:hover .mbfp-icon {
+    fill: var(--main-color);
+}
+.media-embed {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.media-embed iframe {
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+.video-embed-container {
+  max-width: 560px; /* Typical YouTube embed width */
+  margin: 0 auto;   /* Center the video if desired */
+}
+
+.video-embed-container .media-embed iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+}
+
+@media screen and (max-width : 768px) {
+    .tx-page-items .post-box{
+        padding: 30px;
+    }
+}

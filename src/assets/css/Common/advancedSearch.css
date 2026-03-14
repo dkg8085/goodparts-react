@@ -1,0 +1,326 @@
+.advanced-search {
+    padding: 70px 0px 30px 0px;
+}
+
+.advanced-search .col-8 {
+    max-width: 66.666667%;
+    width: 66.666667%;
+}
+
+.advanced-search .col-4 {
+    max-width: 33.333333%;
+    width: 33.333333%;
+}
+
+
+.advanced-search .form-fields {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advanced-search .date-picker input,
+.advanced-search .form-fields input {
+    padding: 10px;
+    line-height: normal;
+    background-color: white;
+    vertical-align: middle;
+    border: 1px solid #e0e0e5;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    font-family: 'Proxima Nova';
+    border-radius: 0.25rem;
+    color: #575757;
+}
+
+
+.advanced-search .date-picker input:focus-visible,
+.advanced-search .form-fields input:focus-visible {
+    outline: none;
+}
+
+.advanced-search .date-picker input:focus,
+.advanced-search .date-picker input:hover,
+.advanced-search .form-fields input:focus,
+.advanced-search .form-fields input:hover {
+    border-color: #15273b;
+    box-shadow: 0 0 4px rgba(21, 39, 59, 0.5);
+}
+
+.advanced-search .form-search p,
+.advanced-search .form-search label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: 'Proxima Nova';
+    margin: 0;
+    color: #575757;
+}
+
+.advanced-search .form-search .ad-date-error{
+    color: #ff0000;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+
+.advanced-search .date-picker {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.advanced-search .date-picker .date-pic input {
+    width: calc(100% - 22px);
+}
+
+.advanced-search .categories {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.advanced-search .categories input {
+    display: inline;
+    margin-right: 0.375rem;
+}
+
+.advanced-search .categories label {
+    width: calc(50% - 5px);
+}
+
+.advanced-search .categories p {
+    display: block;
+    width: 100%;
+}
+
+.advanced-search .search-button {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.advanced-search .search-button button.do-search,
+.advanced-search .search-button button.reset-search{
+    width: 150px!important; 
+}
+.advanced-search .search-button .showsheet_action_btn,
+.advanced-search .search-button button{
+    display: inline-block;
+    border: solid 1px #C8C8C9;
+    background-color: #FFF;
+    color: #919497;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 9px 20px;
+    font-size: 16px;    
+    line-height: 1;
+    text-decoration: none;
+    position: relative;
+    margin: 10px 5px;
+    font-family: 'Proxima Nova';
+    cursor: pointer;
+      
+}
+
+.advanced-search .search-button .showsheet_action_btn svg {
+    fill: #919497;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.advanced-search .search-button .showsheet_action_btn:hover svg {
+    fill: var(--main-color);
+}
+
+.advanced-search .search-button button:hover,
+.advanced-search .search-button .showsheet_action_btn:hover {
+    background: transparent;
+    border-color: var(--main-color);
+    color: #15273B;
+}
+
+.advanced-search .tx-page-items-wrap .post-box {
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.02);
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+.advanced-search .tx-page-items-wrap .post-box h2 svg path {
+    fill: var(--main-color);
+}
+
+.advanced-search .post-box .post-title h2 svg {
+    margin-right: 25px;
+    width: 30px;
+    min-width: 30px;
+}
+
+.advanced-search .post-box .post-title {
+    margin-bottom: 30px;
+}
+
+.advanced-search .post-box .post-title h2 {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #000000;
+    font-family: 'Proxima Nova';
+    margin: 0;
+    display: flex;
+    letter-spacing: -0.28px;
+}
+
+.advanced-search .post-box .post-title a {
+    text-decoration: none;
+}
+
+.advanced-search p,
+.advanced-search .post-box .post-content p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: 'Proxima Nova';
+    color: #707070;
+    word-wrap: break-word;
+    line-height: 32px;
+}
+
+.advanced-search .react-datepicker-wrapper .react-datepicker__close-icon::after {
+    display: none;
+}
+
+
+.advanced-search .date-picker .date-input-wrapper {
+    position: relative;
+}
+
+.advanced-search .date-picker .date-input-wrapper svg.calendar-icon {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    fill: #707070;
+}
+
+.advanced-search label.media-wrap-search {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Pagination */
+.pagination {
+    margin: 1.5rem 0;
+    }
+    .nav-links{
+    display:flex;
+    gap:5px;
+    align-items:center;
+    justify-content: center;
+    }
+    
+    .page-numbers{
+    padding:0px 10px;
+    cursor:pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.64px;
+    }
+    
+    .page-numbers.current{
+    background: #15273B;
+    color: #fff;
+    
+    }
+    .page-numbers.current:hover{
+    background: #15273B;
+    color: #fff;
+    }
+    .next.page-numbers:hover,
+    .prev.page-numbers:hover,
+    .page-numbers:hover {
+    color: #FF0100;
+    }
+    
+    .page-numbers.dots{
+    border:none;
+    cursor:default;
+    }
+    .prev.page-numbers,
+    .next.page-numbers{
+    background-color: #E4E5E6;
+    margin-left: 15px;
+    }
+/* pagination-end */
+
+@media screen and (max-width : 992px) {
+    .advanced-search .row {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .advanced-search .categories label {
+        width:calc(25% - 7.5px);
+    }
+    .advanced-search label.media-wrap-search{
+        width: 100%;
+    }
+
+    .advanced-search .row .col-4,
+    .advanced-search .row .col-8 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .advanced-search .tx-page-items-wrap {
+        margin-top: 50px;
+    }
+
+    #ad-search.advanced-search .row .col-4,
+    #ad-search.advanced-search .row .col-8 {
+        padding: 0;
+    }
+
+    .advanced-search .date-picker .date-pic {
+        width: 50%;
+    }
+
+    .advanced-search .date-picker .date-pic .react-datepicker-wrapper {
+        width: 100%;
+    }
+
+    #ad-search.advanced-search .search-button {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width : 768px) {
+
+    .advanced-search .categories label {
+        width: calc(50% - 5px);
+    }
+
+    .advanced-search label.media-wrap-search{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width : 480px) {
+
+    .advanced-search .categories label {
+        width: 100%;
+    }
+
+    .advanced-search .date-picker {
+        flex-wrap: wrap;
+    }
+
+    .advanced-search .date-picker .date-pic {
+        width: 100%;
+    }
+
+
+}

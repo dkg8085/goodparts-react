@@ -1,0 +1,77 @@
+const featuresData = [
+  {
+    id: 1,
+    icon: "/assets/images/frame.svg",
+    title: "Prep Essentials",
+    subtitle: "NEED-TO-KNOW DAILY INFO",
+    items: [
+      "Headlines",
+      "Music & Entertainment News",
+      "Lifestyle Stories",
+      "Offbeat News",
+      "Almanac & Calendars",
+      "Polls & Surveys",
+      "Trivia",
+    ],
+  },
+  {
+    id: 2,
+    icon: "/assets/images/comedy.svg",
+    title: "COMEDY",
+    subtitle: "EXCLUSIVE COMEDY FEATURES",
+    items: [
+      "Song Parodies",
+      "Spoof Spots",
+      "Character Pieces",
+      "Topical One-Liners",
+      "Daily Almanac",
+      "Celeb Birthday Bits",
+    ],
+  },
+  {
+    id: 3,
+    icon: "/assets/images/speaker.svg",
+    title: "AUDIO",
+    subtitle: "READY-TO-AIR CLIPS",
+    items: [
+      "Celebrity & Artist Audio",
+      "Newsworthy Audio",
+      "TV Audio",
+      "Sports Audio",
+      "Movie Promos / Trailers",
+      "Today in History Audio",
+      "Listener Seed Calls",
+      "Stand Up Comedy Clips",
+    ],
+  },
+  {
+    id: 4,
+    icon: "/assets/images/playplus.svg",
+    title: "MORE GREAT STUFF",
+    subtitle: "MORE RELEVANT CONTENT",
+    items: [
+      "Format News",
+      "News and Clips",
+      "Bits and Phone Burners",
+      "Music Trivia",
+      "Song Anatomy",
+      "Viral Videos",
+      "Good News Stories",
+    ],
+  },
+  {
+    id: 5,
+    icon: "/assets/images/guest-booking.svg",
+    title: "GUEST BOOKING",
+    subtitle: "ONE-ON-ONE PHONE INTERVIEWS",
+    items: [
+      "Actors",
+      "Musicians",
+      "Newsworthy People",
+      "One-Off Requests",
+      "Local Celebs",
+    ],
+  },
+];
+
+export default featuresData;

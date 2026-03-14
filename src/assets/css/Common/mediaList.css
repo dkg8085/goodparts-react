@@ -1,0 +1,143 @@
+.media-list {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.media-list-wrapper {
+    display: flex;
+    border-bottom: solid 1px #C8C8C9;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.media-list-wrapper button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.media-des {
+    font-weight: bold;
+    width: calc(100% - 190px);
+    padding: 0 25px;
+    color: #707070;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'Proxima Nova';
+}
+
+.media-length-download {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: right;
+}
+
+.media-length-download .media-length {
+    background: #F5F5F5;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #15273B;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+}
+
+
+.media-list-wrapper button svg path {
+    stroke: var(--main-color);
+
+}
+
+.media-list-wrapper button svg {
+    width: 50px;
+    height: 50px;
+}
+
+.media-list-wrapper a.script svg {
+    width: 40px;
+}
+
+.media-list-wrapper a.script svg path {
+    fill: var(--main-color);
+}
+
+#script-content {
+    display: none;
+}
+
+
+.media-list-wrapper button svg circle {
+    cx: 12;
+    cy: 12;
+    r: 10;
+    stroke: var(--main-color);
+    stroke-width: 1.5;
+}
+
+.media-list-wrapper button svg line {
+    stroke: var(--main-color);
+    stroke-width: 1.91;
+}
+
+.media-download svg {
+    color: #000;
+}
+
+.media-player img {
+    width: 28px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.media-player {
+    width: 70px;
+    text-align: center;
+}
+
+.media-download:hover svg {
+    color: var(--main-color);
+}
+
+.media-download .downloadLink{
+    position: relative;
+}
+
+.media-download .downloadLink .spinners-loader {
+    top: -6px;
+    left: -14px;
+}
+
+@media screen and (max-width: 481px) {
+    .media-list-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .media-player {
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .media-des {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .media-length-download {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .media-length-download .media-length {
+        margin-bottom: 0px;
+    }
+}

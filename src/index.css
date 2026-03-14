@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import './assets/css/Common/footer.css';
+@import './assets/css/Common/header.css';
+@import './assets/css/Common/banner.css';
+@import './assets/css/font.css';
+@import './assets/css/Common/taxFilter.css';
+@import './assets/css/Common/taxonomyPosts.css';
+@import './assets/css/Common/singlePostLayout.css';
+@import './assets/css/calendarComponent.css';
+@import './assets/css/Common/loginForm.css';
+@import './assets/css/Common/menu.css';
+@import './assets/css/Common/loader.css';
+@import './assets/css/Common/mediaList.css';
+@import './assets/css/Common/advancedSearch.css';
+@import './assets/css/Common/contactUs.css';
+@import './assets/css/Common/showSheet.css';
+@import './assets/css/Common/favorites.css';
+@import './assets/css/Common/manageShowSheetPopup.css';
+@import './assets/css/Common/modalPopup.css';
+@import './assets/css/Common/showSheetSaveButton.css';
+@import  './assets/css/Features.css';
+@import "./assets/css/Common/account.css";
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.col-8 {
+    padding: 0;
+    width: 75%;
+}
+
+.col-1 {
+    width: 10%;
+}
+
+.col-4 {
+    padding: 0 15px;
+    width: 25%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.cal-12 {
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+@media screen and (max-width : 1199px) {
+    .container {
+        max-width: 930px;
+    }
+}
+
+@media screen and (max-width : 991px) {
+    .container {
+        max-width: 690px;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .container {
+        max-width: 420px;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .col-6 {
+        width: 100%;
+    }
+}
