@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout Repository
         uses: actions/checkout@v4
 
@@ -20,5 +21,13 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build React App
+      - name: Build Project
         run: npm run build
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          projectKey: dkg8085_goodparts-react
+          organization: dkg8085
