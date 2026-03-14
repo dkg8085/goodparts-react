@@ -20,8 +20,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # ❌ Remove or comment out the test step if you don't have tests
-      # - name: Run Tests (with coverage)
+      # If you have tests and want coverage, uncomment this step
+      # - name: Run Tests with Coverage
       #   run: npm test -- --coverage --watchAll=false
 
       - name: Build Project
@@ -32,5 +32,11 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          projectKey: dkg8085_goodparts-react
-          organization: dkg8085
+          # Pass SonarCloud properties via 'args'
+          args: >
+            -Dsonar.projectKey=dkg8085_goodparts-react
+            -Dsonar.organization=dkg8085
+            -Dsonar.sources=src
+            -Dsonar.exclusions=**/node_modules/**
+            # If you have coverage reports, uncomment the next line
+            # -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
