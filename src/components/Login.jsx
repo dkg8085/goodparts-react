@@ -58,11 +58,11 @@ export default function LoginForm() {
           <div className="row">
             <div className="col-12">
               <a href="#">
-                <img
+                {/* <img
                   src="/assets/images/login-logo.svg"
                   alt="Site Logo"
                   className="logo"
-                />
+                /> */}
               </a>
             </div>
           </div>
