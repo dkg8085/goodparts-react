@@ -4,8 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { loginUser } from "../redux/thunks/authThunks";
 import { menusItems } from "../redux/thunks/menuThunk";
-import Features from "../components/Features";
-import Footer from "./Common/Footer";
 import { resetValues } from "../redux/slices/selectedValuesSlice";
 
 export default function LoginForm() {
@@ -101,11 +99,6 @@ export default function LoginForm() {
               </div>
               <div className="checkbox-container">
                 <label>
-                  {/* <input
-                    type="checkbox"
-                    name="rememberMe"
-                    onChange={handleChange}
-                  />{" "} */}
                   <input
                     type="checkbox"
                     checked={rememberMe}
@@ -131,9 +124,6 @@ export default function LoginForm() {
           </div>
         </div>
       </div>
-      {/* Features Section */}
-      <Features />
-      <Footer />
     </div>
   );
 }
