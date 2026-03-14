@@ -20,10 +20,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # If you have tests, uncomment the next step
-      # - name: Run Tests with Coverage
-      #   run: npm test -- --coverage --watchAll=false
-
       - name: Build Project
         run: npm run build
 
