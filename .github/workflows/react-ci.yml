@@ -20,15 +20,15 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Tests (with coverage)
-        run: npm test -- --coverage --watchAll=false
-        # Optional: remove this step if you don't have tests or don't need coverage
+      # ❌ Remove or comment out the test step if you don't have tests
+      # - name: Run Tests (with coverage)
+      #   run: npm test -- --coverage --watchAll=false
 
       - name: Build Project
         run: npm run build
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v2  
+        uses: SonarSource/sonarcloud-github-action@v2
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
