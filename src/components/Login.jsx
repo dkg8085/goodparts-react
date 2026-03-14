@@ -6,8 +6,7 @@ import { loginUser } from "../redux/thunks/authThunks";
 import { menusItems } from "../redux/thunks/menuThunk";
 import Features from "../components/Features";
 import Footer from "./Common/Footer";
-import { resetValues } from '../redux/slices/selectedValuesSlice';
-
+import { resetValues } from "../redux/slices/selectedValuesSlice";
 
 export default function LoginForm() {
   const [rememberMe, setRememberMe] = useState(false);
@@ -57,23 +56,11 @@ export default function LoginForm() {
         <div className="container form-logo">
           <div className="row">
             <div className="col-12">
-              <a href="#">
-                {/* <img
-                  src="/assets/images/login-logo.svg"
-                  alt="Site Logo"
-                  className="logo"
-                /> */}
-              </a>
+              <a href="#"></a>
             </div>
           </div>
         </div>
         <div className="login-wrap">
-          <div id="logintitle" className="login_title">
-            <h2>
-              All Your <span>FAVORITE BRANDS.</span> <br /> All in{" "}
-              <span>ONE PLACE.</span>
-            </h2>
-          </div>
           <div className="login-container">
             {error && (
               <p className="error" style={{ color: "red" }}>
@@ -142,70 +129,6 @@ export default function LoginForm() {
               </div>
             </form>
           </div>
-        </div>
-        <div id="brandssec" className="login_brands_images">
-          <div className="brand_image">
-            <img
-              src="/assets/images/nineball-radio-2.png"
-              className="login_img"
-              alt="Nineball Radio"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="brand_image">
-            <img
-              src="/assets/images/USRN.png"
-              className="login_img"
-              alt="USRN"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="brand_image">
-            <img
-              src="/assets/images/Universal-Comedy-Network-Logo-NEW.png"
-              className="login_img"
-              alt="Universal Comedy Network"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="brand_image">
-            <img
-              src="/assets/images/InstaGuest-Reversed.png"
-              className="login_img"
-              alt="InstaGuest"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="brand_image">
-            <img
-              src="/assets/images/Pulse-Reversed.png"
-              className="login_img"
-              alt="Pulse of Radio"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="brand_image">
-            <img
-              src="/assets/images/Spark-Reversed.png"
-              className="login_img"
-              alt="Spark"
-              loading="lazy"
-            />
-          </div>
-        </div>
-        <div className="btn-wrap">
-          <a
-            href="https://www.unitedstations.com/services/boomsite-fm/"
-            className="learn-button"
-            target="_blank"
-          >
-            LEARN MORE
-          </a>
         </div>
       </div>
       {/* Features Section */}
