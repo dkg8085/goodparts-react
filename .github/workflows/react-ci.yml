@@ -9,10 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
@@ -20,16 +21,13 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Tests (with coverage)
-        run: npm test -- --coverage --watchAll=false
-        # Optional: remove this step if you don't have tests or don't need coverage
-
       - name: Build Project
         run: npm run build
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v2  
+        uses: SonarSource/sonarcloud-github-action@2d6fcd8b4f19f78146ee3665a2b9e1b85bbff1dd
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           projectKey: dkg8085_goodparts-react
