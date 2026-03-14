@@ -7,7 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -15,7 +14,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20          
+          node-version: 20
 
       - name: Install Dependencies
         run: npm install
@@ -34,5 +33,25 @@ jobs:
             -Dsonar.sources=src
             -Dsonar.exclusions=**/node_modules/**
 
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: build/          
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment: production     
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-output
+          path: build
+
       - name: Deploy to Vercel
-        run: npx vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --yes   
+        run: npx vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --yes
