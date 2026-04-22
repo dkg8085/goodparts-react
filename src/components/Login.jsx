@@ -65,7 +65,7 @@ export default function LoginForm() {
                 {error}
               </p>
             )}
-            <h3>Username or Email</h3>
+            <h3>Username or Email </h3>
             <form onSubmit={handleSubmit}>
               <div className="input-group">
                 <input
@@ -78,7 +78,7 @@ export default function LoginForm() {
                 />
               </div>
 
-              <h3>Password</h3>
+              <h3>Password </h3>
               <div className="input-group">
                 <input
                   type={showPassword ? "text" : "password"}
